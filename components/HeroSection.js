@@ -20,7 +20,7 @@ const HeroSection = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: 400,
+    height: 500,
   },
   overlay: {
     flex: 1,
@@ -31,10 +31,10 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#fff',
-    fontSize: 32,
+    fontSize: 35,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginBottom: 30,
+    marginBottom: 70
   },
 });
 

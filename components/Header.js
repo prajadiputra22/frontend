@@ -24,7 +24,6 @@ const Header = () => {
         </View>
         
         <TouchableOpacity style={styles.cartButton}>
-
           <Text style={styles.cartText}>CART (1)</Text>
         </TouchableOpacity>
       </View>
@@ -51,7 +50,7 @@ const styles = StyleSheet.create({
       height: 24,
     },
     logoText: {
-      fontSize: 24,
+      fontSize: 40,
       fontWeight: 'bold',
       color: '#333',
     },
@@ -81,8 +80,8 @@ const styles = StyleSheet.create({
     },
     cartButton: {
       backgroundColor: '#ff8c00',
-      paddingHorizontal: 16,
-      paddingVertical: 8,
+      paddingHorizontal: 20,
+      paddingVertical: 10,
       borderRadius: 4,
     },
     cartText: {

@@ -15,24 +15,26 @@ const SearchForm = () => {
       </View>
 
       <View style={styles.form}>
-        <View style={styles.pickerContainer}>
-          <Picker style={styles.picker}>
-            <Picker.Item label="1. Printer Brand" value="" />
-          </Picker>
+        <View style={styles.row}>
+          <View style={styles.pickerContainer}>
+            <Picker style={styles.picker}>
+              <Picker.Item label="1. Printer Brand" value="" />
+            </Picker>
+          </View>
+          <View style={styles.pickerContainer}>
+            <Picker style={styles.picker}>
+              <Picker.Item label="2. Printer Series" value="" />
+            </Picker>
+          </View>
+          <View style={styles.pickerContainer}>
+            <Picker style={styles.picker}>
+              <Picker.Item label="3. Printer Model" value="" />
+            </Picker>
+          </View>
+          <TouchableOpacity style={styles.findButton}>
+            <Text style={styles.findButtonText}>FIND CARTRIDGES</Text>
+          </TouchableOpacity>
         </View>
-        <View style={styles.pickerContainer}>
-          <Picker style={styles.picker}>
-            <Picker.Item label="2. Printer Series" value="" />
-          </Picker>
-        </View>
-        <View style={styles.pickerContainer}>
-          <Picker style={styles.picker}>
-            <Picker.Item label="3. Printer Model" value="" />
-          </Picker>
-        </View>
-        <TouchableOpacity style={styles.findButton}>
-          <Text style={styles.findButtonText}>FIND CARTRIDGES</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -69,7 +71,13 @@ const styles = StyleSheet.create({
   form: {
     gap: 15,
   },
+  row: {
+    flexDirection: 'row',
+    gap: 15,              
+    alignItems: 'center',  
+  },
   pickerContainer: {
+    flex: 1,           
     borderWidth: 1,
     borderColor: '#ddd',
     borderRadius: 4,
@@ -83,6 +91,7 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 4,
     alignItems: 'center',
+    justifyContent: 'center',
   },
   findButtonText: {
     color: '#fff',
@@ -91,4 +100,3 @@ const styles = StyleSheet.create({
 });
 
 export default SearchForm;
-

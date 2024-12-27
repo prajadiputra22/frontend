@@ -26,11 +26,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#1e88e5',
     padding: 10,
-    margin: 50
+    paddingVertical: 3,
+    marginHorizontal: 323,
+    marginBottom: 40
   },
   menuItem: {
     padding: 15,
-    textAlign:'center'
+    marginHorizontal: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row', 
   },
   menuText: {
     color: '#fff',
